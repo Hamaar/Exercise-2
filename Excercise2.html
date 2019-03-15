@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<style>
+h2 {
+ text-align: center;
+ font-family: sans-serif;
+}
+
+table {
+ width: 100%;
+}
+
+form input {
+ font-size: 22px;
+ margin: 5px;
+ padding: 5px;
+ height: 66px;
+ text-align: right;
+}
+
+table td input {
+ width : 100%;
+ padding : 5px;
+ font-size : 22px;
+ cursor : pointer;
+ border : 2px solid #000;
+}
+
+#icon{
+ width: 30px;
+ margin-top: 6px;
+}
+
+
+</style>
+ <title>Exercise 2</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="main bg-success text-white">
+  <h2>Exercise 2</h2>
+  <form name="formTampilHamaar">
+   <input type="text" name="inputHamaar" autocomplete="off">
+  </form>
+  <table>
+   <tr>
+    <td><input type="button" value="C" onclick="hapusSemua()"></td>
+    <td colspan="2"><input type="button" value="Del" onclick="hapus()"></td>
+    <td><input type="button" value="+" onclick="hitung('+')"></td>
+   </tr>
+   <tr>
+    <td><input type="button" value="1" onclick="hitung(1)"></td>
+    <td><input type="button" value="2" onclick="hitung(2)"></td>
+    <td><input type="button" value="3" onclick="hitung(3)"></td>
+    <td><input type="button" value="-" onclick="hitung('-')"></td>
+   </tr>
+   <tr>
+    <td><input type="button" value="4" onclick="hitung(4)"></td>
+    <td><input type="button" value="5" onclick="hitung(5)"></td>
+    <td><input type="button" value="6" onclick="hitung(6)"></td>
+    <td><input type="button" value="*" onclick="hitung('*')"></td>
+   </tr>
+   <tr>
+    <td><input type="button" value="7" onclick="hitung(7)"></td>
+    <td><input type="button" value="8" onclick="hitung(8)"></td>
+    <td><input type="button" value="9" onclick="hitung(9)"></td>
+    <td><input type="button" value="/" onclick="hitung('/')"></td>
+   </tr>
+   <tr>
+    <td><input type="button" value="." onclick="hitung('.')"></td>
+    <td><input type="button" value="0" onclick="hitung(0)"></td>
+    <td colspan="2"><input type="button" value="=" onclick="samaDengan()"></td>
+   </tr>
+   
+  </table>
+  <img id="icon" src="http://chittagongit.com//images/github-icon-png/github-icon-png-29.jpg"/>
+  <span>https://github.com/Hamaar/Exercise-2</span>
+ </div>
+ <script src="js.js"></script>
+</body>
+</html>
